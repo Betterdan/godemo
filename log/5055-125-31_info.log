@@ -1,0 +1,4 @@
+{"l":"info","version":"v2.0.5","company_id":"企业id","自定义key":"自定义value","t":1670198971,"currentLogFile":"E:/dan/codespace/dev/learn/golang/demo/infrastructure/logger/ZeroLog.go:52","msg":"这是一个错误"}
+{"l":"info","version":"v2.0.5","company_id":"企业id","自定义key":"自定义value","errMsg":"测试一个新大错误","t":1670198971,"currentLogFile":"E:/dan/codespace/dev/learn/golang/demo/infrastructure/logger/ZeroLog.go:55","msg":"测试自定义key名称"}
+{"l":"warn","version":"v2.0.5","company_id":"企业id","自定义key":"自定义value","t":1670198971,"currentLogFile":"E:/dan/codespace/dev/learn/golang/demo/infrastructure/logger/ZeroLog.go:57","msg":"这是一个warn错误"}
+{"l":"error","version":"v2.0.5","company_id":"企业id","自定义key":"自定义value","t":1670198971,"currentLogFile":"E:/dan/codespace/dev/learn/golang/demo/infrastructure/logger/ZeroLog.go:58","msg":"这是一个error 错误"}

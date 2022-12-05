@@ -4,6 +4,7 @@ import (
 	"demo/common"
 	"demo/configs"
 	"demo/infrastructure"
+	"demo/infrastructure/logger"
 	"demo/router"
 	"fmt"
 	"log"
@@ -21,7 +22,11 @@ func Init() {
 	if err != nil {
 		fmt.Println("加载配置失败!",err)
 	}
-	log.Println("path:",path)
+
+	/**加载日志**/
+	logger.LoadMyLog()
+
+
 	/** 加载配置 */
 	configs.Init(path+"/configs")
 

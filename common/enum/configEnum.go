@@ -2,5 +2,5 @@ package enum
 
 const (
 
-	CONFIG_FILE_NAME = "configs"
+	CONFIG_FILE_NAME = "config"
 )
