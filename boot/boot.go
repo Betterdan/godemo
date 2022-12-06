@@ -5,6 +5,8 @@ import (
 	"demo/configs"
 	"demo/infrastructure"
 	"demo/infrastructure/logger"
+
+	//"demo/infrastructure/logger"
 	"demo/router"
 	"fmt"
 	"log"
@@ -37,10 +39,10 @@ func Init() {
 	r := router.LoadRouter()
 
 	s := &http.Server{
-		Addr:           ":8989",
+		Addr:           ":8787",
 		Handler:        r,
-		ReadTimeout:    10 * time.Second,
-		WriteTimeout:   10 * time.Second,
+		ReadTimeout:    1000 * time.Second,
+		WriteTimeout:   1000 * time.Second,
 		MaxHeaderBytes: 1 << 20,
 	}
 	s.ListenAndServe()

@@ -44,7 +44,7 @@ func LoadMyLog() {
 	multi := zerolog.MultiLevelWriter(logFile, os.Stdout)
 	logger := zerolog.New(multi).With().Str("version", "v2.0.5").Timestamp().Logger()
 	/** 注册钩子 */
-	logger.Hook(logHook{})
+	//logger.Hook(logHook{})
 
 	//子log 用于当前项目输出，
 	MyLog = logger.With().Str("company_id", "企业id").Str("自定义key", "自定义value").Caller().Logger()
@@ -58,7 +58,6 @@ func LoadMyLog() {
 	MyLog.Error().Msg("这是一个error 错误")
 }
 
-//设置钩子，根据日志区分不同文件
 func (logHook) Run(e *zerolog.Event, level zerolog.Level, msg string) {
 	if level <= zerolog.InfoLevel {
 		e.Str("lev","info")
